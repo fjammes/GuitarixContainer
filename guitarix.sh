@@ -12,17 +12,24 @@ shared_files="$HOME/.local/share/guitarix"
 usage() {
     echo "Usage: $0"
     echo "  Start guitarix in a docker container"
+    echo ""
+    echo "Options:"
+    echo "  -m <models_dir>  Absolute path to models directory (IR, NAM, RTNeural) on host"
     exit 1
 }
 
-# Add option for data directory
-while getopts m opt; do
-    case {$opt} in
+while getopts m:h opt; do
+    case $opt in
         m)
             models_dir="$OPTARG"
             ;;
+        h)
+            usage
+            exit 0
+            ;;
         \?)
             usage
+            exit 1
             ;;
     esac
 done

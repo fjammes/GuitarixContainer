@@ -22,6 +22,16 @@ To run guitarix inside a container execute the following script:
 ./guitarix.sh
 ```
 
+To check GuitarixContainer advanced options run:
+
+```bash
+./guitarix.sh -h
+```
+
 ## Additional Information
 
-For more details or related discussions, refer to the following GitHub issue: [Guitarix Issue #171](https://github.com/brummer10/guitarix/issues/171).
+For more details or related discussions, please open an issue on the project page.
+
+## Archive
+
+Initial GitHub issue: [Guitarix Issue #171](https://github.com/brummer10/guitarix/issues/171).

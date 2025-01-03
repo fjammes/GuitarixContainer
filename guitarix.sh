@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-models_dir="/data/Dropbox"
+models_dir="$HOME/Dropbox"
 guitarix_config="$HOME/.config/guitarix"
 shared_files="$HOME/.local/share/guitarix"
 

@@ -5,7 +5,7 @@ FROM ubuntu:noble
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-ENV GUITARIX_VERSION V0.46.0
+ENV GUITARIX_VERSION=V0.46.0
 
 RUN apt-get update -y && apt-get install -y \
         apt-utils \
